@@ -11,9 +11,9 @@ import com.sutherland.lms.entity.LeaveRequest;
 @Repository
 public interface LeaveRequestRepo extends JpaRepository<LeaveRequest, Integer>{
 	
-	@Query("select obj from LeaveRequest obj where obj.employee.empId = ?1")
+	@Query("select obj from LeaveRequest obj where obj.empId = ?1")
     List<LeaveRequest> getAllLeaveRequestsByEmployeeId(String empId);
 
-    @Query("select obj from LeaveRequest obj where obj.manager.empId = ?1")
+    @Query("select obj from LeaveRequest obj where obj.empId = ?1")
     List<LeaveRequest> getAllLeaveRequestsByManagerId(String managerId);
 }

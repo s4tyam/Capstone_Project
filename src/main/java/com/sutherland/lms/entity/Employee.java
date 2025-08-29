@@ -27,10 +27,9 @@ public class Employee {
 	@Column(length = 30)
 	private String email;
 	
-	@ManyToOne
-	@JoinColumn(name = "managerId", referencedColumnName = "empId")
-	private Employee manager;
-
+	@Column(length = 9)
+	private String managerId;
+	
 	public String getEmpId() {
 		return empId;
 	}
@@ -79,18 +78,18 @@ public class Employee {
 		this.email = email;
 	}
 
-	public Employee getManager() {
-		return manager;
+	public String getManagerId() {
+		return managerId;
 	}
 
-	public void setManager(Employee manager) {
-		this.manager = manager;
+	public void setManagerId(String managerId) {
+		this.managerId = managerId;
 	}
 
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", firstName=" + firstName + ", lastName=" + lastName + ", job=" + job
-				+ ", mobile=" + mobile + ", email=" + email + ", manager=" + manager + "]";
+				+ ", mobile=" + mobile + ", email=" + email + ", managerId=" + managerId + "]";
 	}
 
 	

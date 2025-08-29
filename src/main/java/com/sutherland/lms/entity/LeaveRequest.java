@@ -21,13 +21,11 @@ public class LeaveRequest {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	@ManyToOne
-	@JoinColumn(name = "empId", referencedColumnName = "empId")
-	private Employee employee;
+	@Column
+	private String empId;
 	
-	@ManyToOne
-	@JoinColumn(name = "managerId", referencedColumnName = "empId")
-	private Employee manager;
+	@Column
+	private String managerId;
 	
 	@Column
 	private LocalDate fromDate;
@@ -54,21 +52,29 @@ public class LeaveRequest {
 		return id;
 	}
 
-	public Employee getEmployee() {
-		return employee;
+	public String getEmpId() {
+		return empId;
 	}
 
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
+
+
+	public void setEmpId(String empId) {
+		this.empId = empId;
 	}
 
-	public Employee getManager() {
-		return manager;
+
+
+	public String getManagerId() {
+		return managerId;
 	}
 
-	public void setManager(Employee manager) {
-		this.manager = manager;
+
+
+	public void setManagerId(String managerId) {
+		this.managerId = managerId;
 	}
+
+
 
 	public LocalDate getFromDate() {
 		return fromDate;
@@ -128,7 +134,7 @@ public class LeaveRequest {
 
 	@Override
 	public String toString() {
-		return "LeaveRequest [id=" + id + ", employee=" + employee + ", manager=" + manager + ", fromDate=" + fromDate
+		return "LeaveRequest [id=" + id + ", empId=" + empId + ", managerId=" + managerId + ", fromDate=" + fromDate
 				+ ", toDate=" + toDate + ", leaveType=" + leaveType + ", numberOfDays=" + numberOfDays
 				+ ", dateApplied=" + dateApplied + ", leaveStatus=" + leaveStatus + ", remarks=" + remarks + "]";
 	}

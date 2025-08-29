@@ -13,10 +13,11 @@ public class PublicHolidays {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	@Column(name = "id")
+    private int id;
 	
 	@Column(columnDefinition = "date")
-	private LocalDate date;
+	private LocalDate holidayDate;
 	
 	@Column(length = 50)
 	private String holidayDetails;
@@ -26,11 +27,11 @@ public class PublicHolidays {
 	}
 
 	public LocalDate getDate() {
-		return date;
+		return holidayDate;
 	}
 
-	public void setDate(LocalDate date) {
-		this.date = date;
+	public void setDate(LocalDate holidayDate) {
+		this.holidayDate = holidayDate;
 	}
 
 	public String getHolidayDetails() {
@@ -43,6 +44,6 @@ public class PublicHolidays {
 
 	@Override
 	public String toString() {
-		return "PublicHolidays [id=" + id + ", date=" + date + ", holidayDetails=" + holidayDetails + "]";
+		return "PublicHolidays [id=" + id + ", date=" + holidayDate + ", holidayDetails=" + holidayDetails + "]";
 	}
 }
