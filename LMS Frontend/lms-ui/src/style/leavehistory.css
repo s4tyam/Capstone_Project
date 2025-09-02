@@ -1,0 +1,61 @@
+.leave-history {
+    padding: 20px;
+}
+
+.leave-history h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #1e3a8a;
+}
+
+.leave-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leave-table th,
+.leave-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.leave-table th {
+    background: #f3f4f6;
+    font-weight: bold;
+    color: #374151;
+}
+
+.leave-table tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+/* Buttons */
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cancel-btn {
+    background: #ef4444;
+    color: #fff;
+}
+
+.cancel-btn:hover {
+    background: #dc2626;
+}
+
+.withdraw-btn {
+    background: #facc15;
+    color: #111;
+}
+
+.withdraw-btn:hover {
+    background: #eab308;
+}

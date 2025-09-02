@@ -1,0 +1,104 @@
+.manager-notifications {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.notification-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-card p {
+    margin: 6px 0;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.accept-btn,
+.reject-btn,
+.submit-reject-btn {
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 6px 12px;
+    border: none;
+}
+
+.status {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.status.applied {
+    color: #856404;
+    background: #fff3cd;
+}
+
+.status.accepted {
+    color: #155724;
+    background: #d4edda;
+}
+
+.status.rejected {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.remarks {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.remarks-textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-height: 60px;
+    resize: none;
+}
+
+.notification-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.remarks-textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    min-height: 60px;
+}
+
+.submit-reject-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}

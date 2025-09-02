@@ -1,0 +1,56 @@
+.applyleave-container {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.applyleave-container h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.applyleave-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.applyleave-form label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.applyleave-form input,
+.applyleave-form select {
+    margin-bottom: 16px;
+    padding: 8px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.applyleave-form input:focus,
+.applyleave-form select:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 4px #a5b4fc;
+}
+
+.applyleave-form button {
+    background: #4f46e5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s ease;
+}
+
+.applyleave-form button:hover {
+    background: #4338ca;
+}
